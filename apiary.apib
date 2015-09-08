@@ -3,78 +3,67 @@ HOST: http://polls.apiblueprint.org/
 
 # puppyleague
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+puppyleague is a collection of services related to puppies.
 
-## Questions Collection [/questions]
+## Questions Collection [/puppies]
 
-### List All Questions [GET]
+### List All Puppies [GET]
 
 + Response 200 (application/json)
 
         [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
-            }
+           
+        {
+            "Golden retrieval"
+        },
+        {
+             "Golden retrieval2"
+        },
+        
         ]
 
-### Create a New Question [POST]
+<!--### Create a New Question [POST]-->
 
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
+<!--You may create your own question using this action. It takes a JSON-->
+<!--object containing a question and a collection of answers in the-->
+<!--form of choices.-->
 
-+ Request (application/json)
+<!--+ Request (application/json)-->
 
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
+<!--        {-->
+<!--            "question": "Favourite programming language?",-->
+<!--            "choices": [-->
+<!--                "Swift",-->
+<!--                "Python",-->
+<!--                "Objective-C",-->
+<!--                "Ruby"-->
+<!--            ]-->
+<!--        }-->
 
-+ Response 201 (application/json)
+<!--+ Response 201 (application/json)-->
 
-    + Headers
+<!--    + Headers-->
 
-            Location: /questions/2
+<!--            Location: /questions/2-->
 
-    + Body
+<!--    + Body-->
 
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
-            }
+<!--            {-->
+<!--                "question": "Favourite programming language?",-->
+<!--                "published_at": "2015-08-05T08:40:51.620Z",-->
+<!--                "choices": [-->
+<!--                    {-->
+<!--                        "choice": "Swift",-->
+<!--                        "votes": 0-->
+<!--                    }, {-->
+<!--                        "choice": "Python",-->
+<!--                        "votes": 0-->
+<!--                    }, {-->
+<!--                        "choice": "Objective-C",-->
+<!--                        "votes": 0-->
+<!--                    }, {-->
+<!--                        "choice": "Ruby",-->
+<!--                        "votes": 0-->
+<!--                    }-->
+<!--                ]-->
+<!--            }-->
